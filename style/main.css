@@ -1,0 +1,193 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #111;
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.logo {width: 200px;}
+
+.avatar {
+    width: 60px;
+    border-radius: 10px;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin: 0 10px 0 0;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: #fff;
+} 
+
+/* Featured Movie */
+
+.featured-movie {
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.shadow {
+    background: linear-gradient(to right, #111 25%, rgba(0,0,0,0) 90%), url(../img/featured-movie/img-featured.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-movie .container {
+    padding: 0 0px 0 30px;
+}
+
+.title {
+    font-size: 70px;
+}
+
+.movie-info {
+    display: flex;
+    margin: 15px 0;
+}
+
+.item-info {margin: 0 20px 0 0;font-size: 18px;font-weight: bold;}
+
+.description {
+    width: 40%;
+    font-size: 21px;
+    margin: 0 0 20px;
+    color: #999;
+}
+
+.points {
+    color: #46d369;
+}
+
+.btn-watch, .btn-save {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+
+.btn-watch:hover, .btn-save:hover {
+    opacity: 0.7;
+    transition: all ease 0.3s;
+}
+
+.btn-watch {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-save {
+    background-color: #333;
+    color: #fff;
+}
+
+.genre {
+    display: block;
+    margin: 15px 0;
+    font-size: 17px;
+    color: #999;
+}
+
+/* Carousel Movies */
+
+.owl-carousel {
+    margin: 0 0 35px;
+}
+
+.img-movie {
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+}
+
+.img-movie:hover {
+    transform: scale(1);
+    transition: all ease 0.3s;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 80px;
+}
+
+.owl-next {
+    position: absolute;
+    right: 0;
+    top: 3%;
+    height: 90%;
+    width: 3%;
+    background: #00000061 !important;
+    transition: 0.3s;
+}
+
+.owl-next:hover {
+    background: #000000b8 !important;
+    transition: 0.3s;
+}
+
+.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 3%;
+    height: 90%;
+    width: 3%;
+    background: #00000061 !important;
+    transition: 0.3s;
+}
+
+.owl-prev:hover {
+    background: #000000b8 !important;
+    transition: 0.3s;
+}
+
+.movies {
+    padding: 0 30px;
+    margin: -60px 0 0;
+}
+
+.title-movies {
+    font-size: 33px;
+}
+
+.footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    margin: 45px 0 0;
+}
